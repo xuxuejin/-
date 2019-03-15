@@ -40,3 +40,10 @@
       
       console.log(welcome1('dot'))//hi:DDDDDOT!
       console.log(welcome2('dolb'))//HI:DDDDDOLB!
+      
+      
+    其实compose拿原生reduce也可以实现，代码更加简洁：
+    function compose(...funcs) {
+      return funcs.reduce((a, b) => (...args) => a(b(...args)))
+    }
+   
