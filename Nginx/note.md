@@ -26,6 +26,22 @@
   
   ./nginx.exe -t          测试配置是否正确
   
+##### 判断 ua 指向不同的目录  
+
+    listen       80;
+    server_name  dfg.test;
+
+    location / {
+      root D:/work/dfg/dfg_website/dist;
+
+      if ($http_user_agent ~* "(iPhone|iPod|Opera Mini|Android.*Mobile|NetFront|PSP|BlackBerry|Windows Phone)") {
+        root D:/work/dfg/dfg_website_m/dist;
+      }
+
+      index  index.html index.htm;
+    }
+
+  
 ## Nginx启动错误排查
 
   找到logs文件夹里的 error.log 文件，查看报错原因，查询解决方案 -------> 报错原因是有错误占用 443端口
