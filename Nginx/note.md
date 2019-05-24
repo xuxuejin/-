@@ -22,6 +22,10 @@
   
   ./nginx.exe -s reload   重启
   
+  修改 config 配置文件后，最好重新启动一下 nginx 服务，在重启之前，怎么判断 nginx 配置写得对不对呢？
+  
+  ./nginx.exe -t          测试配置是否正确
+  
 ## Nginx启动错误排查
 
   找到logs文件夹里的 error.log 文件，查看报错原因，查询解决方案 -------> 报错原因是有错误占用 443端口
