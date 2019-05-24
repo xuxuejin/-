@@ -1,8 +1,14 @@
 ## Nginx的相关命令和配置
 
   启动服务：start nginx
+  
   停止服务：nginx -s stop
+  
   重新加载：nginx -s reload(配置文件被修改后需要执行它)
+  
+  查看nginx进程：tasklist /fi "imagename eq nginx.exe"
+  
+  更详细的命令解释，查看官网：http://nginx.org/en/docs/windows.html
   
 ## Nginx启动错误排查
 
