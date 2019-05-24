@@ -1,5 +1,7 @@
 ## Nginx的相关命令和配置
 
+##### win下cmd的常用命令
+
   启动服务：start nginx
   
   停止服务：nginx -s stop
@@ -8,9 +10,9 @@
   
   查看nginx进程：tasklist /fi "imagename eq nginx.exe"
   
-  更详细的命令解释，查看官网：http://nginx.org/en/docs/windows.html
+  更详细的命令解释，查看官网：http://nginx.org/en/docs/windows.html，在 win10 自带 powerShell 下，命令格式同 gitBash 下一样。
   
-  但是如果安装 gitBash，命令格式会有差异
+##### 如果安装 gitBash，命令格式会有差异
   
   进入到 nginx 目录：
   
