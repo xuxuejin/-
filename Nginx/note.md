@@ -10,6 +10,16 @@
   
   更详细的命令解释，查看官网：http://nginx.org/en/docs/windows.html
   
+  但是如果安装 gitBash，命令格式会有差异
+  
+  进入到 nginx 目录：
+  
+  start ./nginx.exe       启动
+  
+  ./nginx.exe -s stop     停止
+  
+  ./nginx.exe -s reload   重启
+  
 ## Nginx启动错误排查
 
   找到logs文件夹里的 error.log 文件，查看报错原因，查询解决方案 -------> 报错原因是有错误占用 443端口
